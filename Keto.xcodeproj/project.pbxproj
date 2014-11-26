@@ -13,6 +13,8 @@
 		390B1EEF1A1AD28F006506E9 /* KetoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B1EEE1A1AD28F006506E9 /* KetoTests.m */; };
 		393CA1201A25897100D4C4F5 /* KTARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA11E1A25897100D4C4F5 /* KTARootViewController.m */; };
 		393CA1211A25897100D4C4F5 /* KTARootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 393CA11F1A25897100D4C4F5 /* KTARootViewController.xib */; };
+		393CA1241A2589ED00D4C4F5 /* KTALineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA1231A2589ED00D4C4F5 /* KTALineGraphView.m */; };
+		393CA1271A25B29000D4C4F5 /* KTADataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA1261A25B29000D4C4F5 /* KTADataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,10 @@
 		393CA11D1A25897100D4C4F5 /* KTARootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTARootViewController.h; sourceTree = "<group>"; };
 		393CA11E1A25897100D4C4F5 /* KTARootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTARootViewController.m; sourceTree = "<group>"; };
 		393CA11F1A25897100D4C4F5 /* KTARootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KTARootViewController.xib; sourceTree = "<group>"; };
+		393CA1221A2589ED00D4C4F5 /* KTALineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTALineGraphView.h; sourceTree = "<group>"; };
+		393CA1231A2589ED00D4C4F5 /* KTALineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTALineGraphView.m; sourceTree = "<group>"; };
+		393CA1251A25B29000D4C4F5 /* KTADataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTADataManager.h; sourceTree = "<group>"; };
+		393CA1261A25B29000D4C4F5 /* KTADataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTADataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +87,12 @@
 			children = (
 				390B1ED31A1AD28F006506E9 /* KTAAppDelegate.h */,
 				390B1ED41A1AD28F006506E9 /* KTAAppDelegate.m */,
+				393CA1251A25B29000D4C4F5 /* KTADataManager.h */,
+				393CA1261A25B29000D4C4F5 /* KTADataManager.m */,
 				393CA11D1A25897100D4C4F5 /* KTARootViewController.h */,
 				393CA11E1A25897100D4C4F5 /* KTARootViewController.m */,
+				393CA1221A2589ED00D4C4F5 /* KTALineGraphView.h */,
+				393CA1231A2589ED00D4C4F5 /* KTALineGraphView.m */,
 				393CA11F1A25897100D4C4F5 /* KTARootViewController.xib */,
 				390B1EDF1A1AD28F006506E9 /* Images.xcassets */,
 				390B1ECF1A1AD28F006506E9 /* Supporting Files */,
@@ -217,6 +227,8 @@
 			files = (
 				393CA1201A25897100D4C4F5 /* KTARootViewController.m in Sources */,
 				390B1ED51A1AD28F006506E9 /* KTAAppDelegate.m in Sources */,
+				393CA1241A2589ED00D4C4F5 /* KTALineGraphView.m in Sources */,
+				393CA1271A25B29000D4C4F5 /* KTADataManager.m in Sources */,
 				390B1ED21A1AD28F006506E9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

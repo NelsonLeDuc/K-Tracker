@@ -1,19 +1,121 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KTARootViewController">
             <connections>
+                <outlet property="lineGraphView" destination="bcH-Rz-mRS" id="p6b-10-F4P"/>
+                <outlet property="scrollView" destination="VI0-pW-qko" id="5Xe-F1-yxU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weightField" destination="rBV-xg-wra" id="iyF-Uf-uQh"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pv5-KI-JUi">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="400" placeholderIntrinsicHeight="600" translatesAutoresizingMaskIntoConstraints="NO" id="VI0-pW-qko">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcH-Rz-mRS" customClass="KTALineGraphView">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="KGU-61-bCT"/>
+                                <constraint firstAttribute="width" constant="86" id="Qvi-LI-kej"/>
+                                <constraint firstAttribute="width" constant="400" id="pde-Bq-CFw"/>
+                                <constraint firstAttribute="height" constant="40" id="syM-LI-DbU"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="KGU-61-bCT"/>
+                                    <exclude reference="Qvi-LI-kej"/>
+                                    <exclude reference="pde-Bq-CFw"/>
+                                    <exclude reference="syM-LI-DbU"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Weight" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rBV-xg-wra">
+                            <rect key="frame" x="138" y="480" width="212" height="57"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="212" id="Buk-6h-x7N"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="48"/>
+                            <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vl8-mf-eiy">
+                            <rect key="frame" x="362" y="499" width="40" height="39"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <state key="normal" title="Add">
+                                <color key="titleColor" red="0.18039215689999999" green="0.5568627451" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="-1" eventType="touchUpInside" id="ZUY-mU-koS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dei-Ss-093">
+                            <rect key="frame" x="277" y="473" width="46" height="30"/>
+                            <state key="normal" title="Button">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="bcH-Rz-mRS" firstAttribute="top" secondItem="VI0-pW-qko" secondAttribute="top" id="5qE-Rw-R6R"/>
+                        <constraint firstItem="vl8-mf-eiy" firstAttribute="leading" secondItem="rBV-xg-wra" secondAttribute="trailing" constant="12" id="7Se-Y6-HXf"/>
+                        <constraint firstItem="bcH-Rz-mRS" firstAttribute="height" secondItem="VI0-pW-qko" secondAttribute="height" id="QMP-By-qlX"/>
+                        <constraint firstAttribute="centerX" secondItem="rBV-xg-wra" secondAttribute="centerX" constant="56" id="SM6-ks-Mtp"/>
+                        <constraint firstItem="bcH-Rz-mRS" firstAttribute="leading" secondItem="VI0-pW-qko" secondAttribute="leading" id="Tgj-d2-Fzb"/>
+                        <constraint firstAttribute="trailing" secondItem="bcH-Rz-mRS" secondAttribute="trailing" id="ZU1-ZR-glk"/>
+                        <constraint firstAttribute="bottom" secondItem="rBV-xg-wra" secondAttribute="bottom" id="c09-9R-SS3"/>
+                        <constraint firstItem="bcH-Rz-mRS" firstAttribute="width" secondItem="VI0-pW-qko" secondAttribute="width" id="cpd-41-gIY"/>
+                        <constraint firstItem="rBV-xg-wra" firstAttribute="baseline" secondItem="vl8-mf-eiy" secondAttribute="baseline" id="dAt-rF-ZWz"/>
+                        <constraint firstItem="rBV-xg-wra" firstAttribute="top" secondItem="bcH-Rz-mRS" secondAttribute="bottom" constant="30" id="glz-iV-993"/>
+                        <constraint firstAttribute="bottom" secondItem="bcH-Rz-mRS" secondAttribute="bottom" id="laq-dp-1Hz"/>
+                        <constraint firstItem="rBV-xg-wra" firstAttribute="centerY" secondItem="vl8-mf-eiy" secondAttribute="centerY" id="sV7-rv-y6u"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="dei-Ss-093"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="QMP-By-qlX"/>
+                            <exclude reference="cpd-41-gIY"/>
+                            <exclude reference="laq-dp-1Hz"/>
+                            <exclude reference="sV7-rv-y6u"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Pv5-KI-JUi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7JU-TK-GZA"/>
+                <constraint firstAttribute="trailing" secondItem="Pv5-KI-JUi" secondAttribute="trailing" id="9nX-MN-Yt0"/>
+                <constraint firstAttribute="trailing" secondItem="VI0-pW-qko" secondAttribute="trailing" id="RBY-xv-YFt"/>
+                <constraint firstItem="bcH-Rz-mRS" firstAttribute="height" secondItem="Pv5-KI-JUi" secondAttribute="height" multiplier="3/4" id="YNs-BP-u98"/>
+                <constraint firstAttribute="bottom" secondItem="VI0-pW-qko" secondAttribute="bottom" id="ajg-UE-AjV"/>
+                <constraint firstAttribute="bottom" secondItem="Pv5-KI-JUi" secondAttribute="bottom" id="dY9-XE-yMh"/>
+                <constraint firstItem="VI0-pW-qko" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dmW-Fa-9z0"/>
+                <constraint firstAttribute="bottom" secondItem="Pv5-KI-JUi" secondAttribute="bottom" id="oH0-OM-Itu"/>
+                <constraint firstItem="bcH-Rz-mRS" firstAttribute="width" secondItem="Pv5-KI-JUi" secondAttribute="width" id="qPY-hW-nCq"/>
+                <constraint firstItem="VI0-pW-qko" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xEB-4f-GwY"/>
+                <constraint firstItem="Pv5-KI-JUi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xbN-Vu-ggL"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="oH0-OM-Itu"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="153" y="198"/>
         </view>
     </objects>
 </document>
