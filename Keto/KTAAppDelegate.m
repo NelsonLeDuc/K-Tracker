@@ -7,7 +7,7 @@
 //
 
 #import "KTAAppDelegate.h"
-#import "KTACarbContainerViewController.h"
+#import "KTARootViewController.h"
 
 @implementation KTAAppDelegate
 
@@ -22,7 +22,7 @@
 
 - (void)displayRootViewController
 {
-    KTACarbContainerViewController *containerViewController = [[KTACarbContainerViewController alloc] init];
+    KTARootViewController *containerViewController = [[KTARootViewController alloc] init];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = containerViewController;

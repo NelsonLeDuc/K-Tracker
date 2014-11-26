@@ -9,17 +9,10 @@
 /* Begin PBXBuildFile section */
 		390B1ED21A1AD28F006506E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B1ED11A1AD28F006506E9 /* main.m */; };
 		390B1ED51A1AD28F006506E9 /* KTAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B1ED41A1AD28F006506E9 /* KTAAppDelegate.m */; };
-		390B1ED81A1AD28F006506E9 /* KTACarbAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B1ED71A1AD28F006506E9 /* KTACarbAddViewController.m */; };
 		390B1EE01A1AD28F006506E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390B1EDF1A1AD28F006506E9 /* Images.xcassets */; };
 		390B1EEF1A1AD28F006506E9 /* KetoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B1EEE1A1AD28F006506E9 /* KetoTests.m */; };
-		390B1EFD1A1AD4DD006506E9 /* KTACarbContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B1EFC1A1AD4DD006506E9 /* KTACarbContainerViewController.m */; };
-		390B1EFF1A1AD548006506E9 /* KTACarbContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390B1EFE1A1AD548006506E9 /* KTACarbContainerViewController.xib */; };
-		390B1F031A1AD7D9006506E9 /* KTACarbAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390B1F021A1AD7D9006506E9 /* KTACarbAddViewController.xib */; };
-		390B1F061A1ADC1A006506E9 /* KTAToggleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B1F051A1ADC1A006506E9 /* KTAToggleButton.m */; };
-		390B1F091A1AE3B5006506E9 /* KTACarbTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B1F081A1AE3B5006506E9 /* KTACarbTableViewCell.m */; };
-		390B1F0B1A1AE3C3006506E9 /* KTACarbTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390B1F0A1A1AE3C3006506E9 /* KTACarbTableViewCell.xib */; };
-		390B1F0E1A1AE5E1006506E9 /* KTACarbDailySource.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B1F0D1A1AE5E1006506E9 /* KTACarbDailySource.m */; };
-		390B1F111A1AE603006506E9 /* KTACarb.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B1F101A1AE603006506E9 /* KTACarb.m */; };
+		393CA1201A25897100D4C4F5 /* KTARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA11E1A25897100D4C4F5 /* KTARootViewController.m */; };
+		393CA1211A25897100D4C4F5 /* KTARootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 393CA11F1A25897100D4C4F5 /* KTARootViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,25 +31,13 @@
 		390B1ED11A1AD28F006506E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		390B1ED31A1AD28F006506E9 /* KTAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTAAppDelegate.h; sourceTree = "<group>"; };
 		390B1ED41A1AD28F006506E9 /* KTAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTAAppDelegate.m; sourceTree = "<group>"; };
-		390B1ED61A1AD28F006506E9 /* KTACarbAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTACarbAddViewController.h; sourceTree = "<group>"; };
-		390B1ED71A1AD28F006506E9 /* KTACarbAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTACarbAddViewController.m; sourceTree = "<group>"; };
 		390B1EDF1A1AD28F006506E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		390B1EE81A1AD28F006506E9 /* KetoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KetoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		390B1EED1A1AD28F006506E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		390B1EEE1A1AD28F006506E9 /* KetoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KetoTests.m; sourceTree = "<group>"; };
-		390B1EFB1A1AD4DD006506E9 /* KTACarbContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTACarbContainerViewController.h; sourceTree = "<group>"; };
-		390B1EFC1A1AD4DD006506E9 /* KTACarbContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTACarbContainerViewController.m; sourceTree = "<group>"; };
-		390B1EFE1A1AD548006506E9 /* KTACarbContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KTACarbContainerViewController.xib; sourceTree = "<group>"; };
-		390B1F021A1AD7D9006506E9 /* KTACarbAddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KTACarbAddViewController.xib; sourceTree = "<group>"; };
-		390B1F041A1ADC1A006506E9 /* KTAToggleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTAToggleButton.h; sourceTree = "<group>"; };
-		390B1F051A1ADC1A006506E9 /* KTAToggleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTAToggleButton.m; sourceTree = "<group>"; };
-		390B1F071A1AE3B5006506E9 /* KTACarbTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTACarbTableViewCell.h; sourceTree = "<group>"; };
-		390B1F081A1AE3B5006506E9 /* KTACarbTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTACarbTableViewCell.m; sourceTree = "<group>"; };
-		390B1F0A1A1AE3C3006506E9 /* KTACarbTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KTACarbTableViewCell.xib; sourceTree = "<group>"; };
-		390B1F0C1A1AE5E1006506E9 /* KTACarbDailySource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTACarbDailySource.h; sourceTree = "<group>"; };
-		390B1F0D1A1AE5E1006506E9 /* KTACarbDailySource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTACarbDailySource.m; sourceTree = "<group>"; };
-		390B1F0F1A1AE603006506E9 /* KTACarb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTACarb.h; sourceTree = "<group>"; };
-		390B1F101A1AE603006506E9 /* KTACarb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTACarb.m; sourceTree = "<group>"; };
+		393CA11D1A25897100D4C4F5 /* KTARootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTARootViewController.h; sourceTree = "<group>"; };
+		393CA11E1A25897100D4C4F5 /* KTARootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTARootViewController.m; sourceTree = "<group>"; };
+		393CA11F1A25897100D4C4F5 /* KTARootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KTARootViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,23 +81,11 @@
 			children = (
 				390B1ED31A1AD28F006506E9 /* KTAAppDelegate.h */,
 				390B1ED41A1AD28F006506E9 /* KTAAppDelegate.m */,
-				390B1F041A1ADC1A006506E9 /* KTAToggleButton.h */,
-				390B1F051A1ADC1A006506E9 /* KTAToggleButton.m */,
-				390B1EFB1A1AD4DD006506E9 /* KTACarbContainerViewController.h */,
-				390B1EFC1A1AD4DD006506E9 /* KTACarbContainerViewController.m */,
-				390B1ED61A1AD28F006506E9 /* KTACarbAddViewController.h */,
-				390B1ED71A1AD28F006506E9 /* KTACarbAddViewController.m */,
-				390B1EFE1A1AD548006506E9 /* KTACarbContainerViewController.xib */,
-				390B1F021A1AD7D9006506E9 /* KTACarbAddViewController.xib */,
+				393CA11D1A25897100D4C4F5 /* KTARootViewController.h */,
+				393CA11E1A25897100D4C4F5 /* KTARootViewController.m */,
+				393CA11F1A25897100D4C4F5 /* KTARootViewController.xib */,
 				390B1EDF1A1AD28F006506E9 /* Images.xcassets */,
 				390B1ECF1A1AD28F006506E9 /* Supporting Files */,
-				390B1F071A1AE3B5006506E9 /* KTACarbTableViewCell.h */,
-				390B1F081A1AE3B5006506E9 /* KTACarbTableViewCell.m */,
-				390B1F0A1A1AE3C3006506E9 /* KTACarbTableViewCell.xib */,
-				390B1F0F1A1AE603006506E9 /* KTACarb.h */,
-				390B1F101A1AE603006506E9 /* KTACarb.m */,
-				390B1F0C1A1AE5E1006506E9 /* KTACarbDailySource.h */,
-				390B1F0D1A1AE5E1006506E9 /* KTACarbDailySource.m */,
 			);
 			path = Keto;
 			sourceTree = "<group>";
@@ -227,10 +196,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				390B1F0B1A1AE3C3006506E9 /* KTACarbTableViewCell.xib in Resources */,
-				390B1F031A1AD7D9006506E9 /* KTACarbAddViewController.xib in Resources */,
 				390B1EE01A1AD28F006506E9 /* Images.xcassets in Resources */,
-				390B1EFF1A1AD548006506E9 /* KTACarbContainerViewController.xib in Resources */,
+				393CA1211A25897100D4C4F5 /* KTARootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,14 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				390B1F091A1AE3B5006506E9 /* KTACarbTableViewCell.m in Sources */,
+				393CA1201A25897100D4C4F5 /* KTARootViewController.m in Sources */,
 				390B1ED51A1AD28F006506E9 /* KTAAppDelegate.m in Sources */,
-				390B1ED81A1AD28F006506E9 /* KTACarbAddViewController.m in Sources */,
-				390B1F061A1ADC1A006506E9 /* KTAToggleButton.m in Sources */,
-				390B1F111A1AE603006506E9 /* KTACarb.m in Sources */,
-				390B1EFD1A1AD4DD006506E9 /* KTACarbContainerViewController.m in Sources */,
 				390B1ED21A1AD28F006506E9 /* main.m in Sources */,
-				390B1F0E1A1AE5E1006506E9 /* KTACarbDailySource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +391,7 @@
 				390B1EF41A1AD28F006506E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		390B1EF51A1AD28F006506E9 /* Build configuration list for PBXNativeTarget "KetoTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +400,7 @@
 				390B1EF71A1AD28F006506E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
