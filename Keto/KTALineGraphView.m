@@ -56,7 +56,7 @@
     shapeLayer.frame = graphView.bounds;
     shapeLayer.strokeColor = [[UIColor orangeColor] CGColor];
     shapeLayer.fillColor = [[UIColor clearColor] CGColor];
-    shapeLayer.lineWidth = 3.0;
+    shapeLayer.lineWidth = 4.0;
     shapeLayer.allowsEdgeAntialiasing = YES;
     shapeLayer.lineCap = kCALineCapRound;
     shapeLayer.lineJoin = kCALineJoinRound;
