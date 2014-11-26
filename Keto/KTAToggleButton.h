@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  KTAToggleButton.h
 //  Keto
 //
 //  Created by Nelson LeDuc on 11/17/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
-
+@interface KTAToggleButton : UIView
 
 @end
-

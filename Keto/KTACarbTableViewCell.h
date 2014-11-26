@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  KTACarbTableViewCell.h
 //  Keto
 //
 //  Created by Nelson LeDuc on 11/17/14.
@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class KTACarb;
 
-@property (strong, nonatomic) UIWindow *window;
+@interface KTACarbTableViewCell : UITableViewCell
 
+- (void)configureForCarb:(KTACarb *)carb;
 
 @end
-

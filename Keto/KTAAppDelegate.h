@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  AppDelegate.h
 //  Keto
 //
 //  Created by Nelson LeDuc on 11/17/14.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface KTAAppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (nonatomic, strong) UIWindow *window;
 
 @end
 
