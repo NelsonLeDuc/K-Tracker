@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		390B1ED21A1AD28F006506E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B1ED11A1AD28F006506E9 /* main.m */; };
-		390B1ED51A1AD28F006506E9 /* KTAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B1ED41A1AD28F006506E9 /* KTAAppDelegate.m */; };
 		390B1EE01A1AD28F006506E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390B1EDF1A1AD28F006506E9 /* Images.xcassets */; };
 		390B1EEF1A1AD28F006506E9 /* KetoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 390B1EEE1A1AD28F006506E9 /* KetoTests.m */; };
 		393CA1201A25897100D4C4F5 /* KTARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA11E1A25897100D4C4F5 /* KTARootViewController.m */; };
 		393CA1211A25897100D4C4F5 /* KTARootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 393CA11F1A25897100D4C4F5 /* KTARootViewController.xib */; };
 		393CA1241A2589ED00D4C4F5 /* KTALineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA1231A2589ED00D4C4F5 /* KTALineGraphView.m */; };
 		393CA1271A25B29000D4C4F5 /* KTADataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA1261A25B29000D4C4F5 /* KTADataManager.m */; };
+		39707A3D1A2D369F007485C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39707A3C1A2D369F007485C5 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		390B1ECC1A1AD28F006506E9 /* Keto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		390B1ECC1A1AD28F006506E9 /* K Trackr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "K Trackr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		390B1ED01A1AD28F006506E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		390B1ED11A1AD28F006506E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		390B1ED31A1AD28F006506E9 /* KTAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTAAppDelegate.h; sourceTree = "<group>"; };
-		390B1ED41A1AD28F006506E9 /* KTAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTAAppDelegate.m; sourceTree = "<group>"; };
 		390B1EDF1A1AD28F006506E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		390B1EE81A1AD28F006506E9 /* KetoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KetoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		390B1EED1A1AD28F006506E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +40,8 @@
 		393CA1231A2589ED00D4C4F5 /* KTALineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTALineGraphView.m; sourceTree = "<group>"; };
 		393CA1251A25B29000D4C4F5 /* KTADataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTADataManager.h; sourceTree = "<group>"; };
 		393CA1261A25B29000D4C4F5 /* KTADataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTADataManager.m; sourceTree = "<group>"; };
+		39707A3B1A2D369F007485C5 /* Keto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Keto-Bridging-Header.h"; sourceTree = "<group>"; };
+		39707A3C1A2D369F007485C5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +74,7 @@
 		390B1ECD1A1AD28F006506E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				390B1ECC1A1AD28F006506E9 /* Keto.app */,
+				390B1ECC1A1AD28F006506E9 /* K Trackr.app */,
 				390B1EE81A1AD28F006506E9 /* KetoTests.xctest */,
 			);
 			name = Products;
@@ -85,8 +83,6 @@
 		390B1ECE1A1AD28F006506E9 /* Keto */ = {
 			isa = PBXGroup;
 			children = (
-				390B1ED31A1AD28F006506E9 /* KTAAppDelegate.h */,
-				390B1ED41A1AD28F006506E9 /* KTAAppDelegate.m */,
 				393CA1251A25B29000D4C4F5 /* KTADataManager.h */,
 				393CA1261A25B29000D4C4F5 /* KTADataManager.m */,
 				393CA11D1A25897100D4C4F5 /* KTARootViewController.h */,
@@ -96,6 +92,8 @@
 				393CA11F1A25897100D4C4F5 /* KTARootViewController.xib */,
 				390B1EDF1A1AD28F006506E9 /* Images.xcassets */,
 				390B1ECF1A1AD28F006506E9 /* Supporting Files */,
+				39707A3C1A2D369F007485C5 /* AppDelegate.swift */,
+				39707A3B1A2D369F007485C5 /* Keto-Bridging-Header.h */,
 			);
 			path = Keto;
 			sourceTree = "<group>";
@@ -104,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				390B1ED01A1AD28F006506E9 /* Info.plist */,
-				390B1ED11A1AD28F006506E9 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -143,7 +140,7 @@
 			);
 			name = Keto;
 			productName = Keto;
-			productReference = 390B1ECC1A1AD28F006506E9 /* Keto.app */;
+			productReference = 390B1ECC1A1AD28F006506E9 /* K Trackr.app */;
 			productType = "com.apple.product-type.application";
 		};
 		390B1EE71A1AD28F006506E9 /* KetoTests */ = {
@@ -225,11 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39707A3D1A2D369F007485C5 /* AppDelegate.swift in Sources */,
 				393CA1201A25897100D4C4F5 /* KTARootViewController.m in Sources */,
-				390B1ED51A1AD28F006506E9 /* KTAAppDelegate.m in Sources */,
 				393CA1241A2589ED00D4C4F5 /* KTALineGraphView.m in Sources */,
 				393CA1271A25B29000D4C4F5 /* KTADataManager.m in Sources */,
-				390B1ED21A1AD28F006506E9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,9 +329,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Keto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "K Trackr";
+				SWIFT_OBJC_BRIDGING_HEADER = "Keto/Keto-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -344,9 +343,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Keto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "K Trackr";
+				SWIFT_OBJC_BRIDGING_HEADER = "Keto/Keto-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -364,7 +365,7 @@
 				);
 				INFOPLIST_FILE = KetoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KetoTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keto.app/Keto";
 			};
 			name = Debug;
@@ -379,7 +380,7 @@
 				);
 				INFOPLIST_FILE = KetoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KetoTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Keto.app/Keto";
 			};
 			name = Release;
