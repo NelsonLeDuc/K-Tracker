@@ -8,7 +8,7 @@
 
 #import "KTARootViewController.h"
 #import "KTALineGraphView.h"
-#import "KTADataManager.h"
+#import "KetoTrack-Swift.h"
 
 @interface KTARootViewController ()
 
@@ -31,7 +31,7 @@
 {
     [super viewDidAppear:animated];
     
-    NSArray *data = [KTADataManager savedDataArray];
+    NSArray *data = [DataManager savedDataArray];
     
     [self.lineGraphView setupWithDataArray:data];
     [self.lineGraphView displayLineAnimated:NO];
@@ -51,7 +51,7 @@
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.lineGraphView addData:value];
-        [KTADataManager saveDataArray:self.lineGraphView.dataArray];
+        [DataManager saveDataArray:self.lineGraphView.dataArray];
     });
 }
 

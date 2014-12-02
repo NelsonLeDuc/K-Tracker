@@ -12,8 +12,8 @@
 		393CA1201A25897100D4C4F5 /* KTARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA11E1A25897100D4C4F5 /* KTARootViewController.m */; };
 		393CA1211A25897100D4C4F5 /* KTARootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 393CA11F1A25897100D4C4F5 /* KTARootViewController.xib */; };
 		393CA1241A2589ED00D4C4F5 /* KTALineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA1231A2589ED00D4C4F5 /* KTALineGraphView.m */; };
-		393CA1271A25B29000D4C4F5 /* KTADataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 393CA1261A25B29000D4C4F5 /* KTADataManager.m */; };
 		39707A3D1A2D369F007485C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39707A3C1A2D369F007485C5 /* AppDelegate.swift */; };
+		39707A3F1A2D383F007485C5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39707A3E1A2D383F007485C5 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +38,9 @@
 		393CA11F1A25897100D4C4F5 /* KTARootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KTARootViewController.xib; sourceTree = "<group>"; };
 		393CA1221A2589ED00D4C4F5 /* KTALineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTALineGraphView.h; sourceTree = "<group>"; };
 		393CA1231A2589ED00D4C4F5 /* KTALineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTALineGraphView.m; sourceTree = "<group>"; };
-		393CA1251A25B29000D4C4F5 /* KTADataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTADataManager.h; sourceTree = "<group>"; };
-		393CA1261A25B29000D4C4F5 /* KTADataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTADataManager.m; sourceTree = "<group>"; };
 		39707A3B1A2D369F007485C5 /* Keto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Keto-Bridging-Header.h"; sourceTree = "<group>"; };
 		39707A3C1A2D369F007485C5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39707A3E1A2D383F007485C5 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +82,6 @@
 		390B1ECE1A1AD28F006506E9 /* Keto */ = {
 			isa = PBXGroup;
 			children = (
-				393CA1251A25B29000D4C4F5 /* KTADataManager.h */,
-				393CA1261A25B29000D4C4F5 /* KTADataManager.m */,
 				393CA11D1A25897100D4C4F5 /* KTARootViewController.h */,
 				393CA11E1A25897100D4C4F5 /* KTARootViewController.m */,
 				393CA1221A2589ED00D4C4F5 /* KTALineGraphView.h */,
@@ -94,6 +91,7 @@
 				390B1ECF1A1AD28F006506E9 /* Supporting Files */,
 				39707A3C1A2D369F007485C5 /* AppDelegate.swift */,
 				39707A3B1A2D369F007485C5 /* Keto-Bridging-Header.h */,
+				39707A3E1A2D383F007485C5 /* DataManager.swift */,
 			);
 			path = Keto;
 			sourceTree = "<group>";
@@ -223,9 +221,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				39707A3D1A2D369F007485C5 /* AppDelegate.swift in Sources */,
+				39707A3F1A2D383F007485C5 /* DataManager.swift in Sources */,
 				393CA1201A25897100D4C4F5 /* KTARootViewController.m in Sources */,
 				393CA1241A2589ED00D4C4F5 /* KTALineGraphView.m in Sources */,
-				393CA1271A25B29000D4C4F5 /* KTADataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +283,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = KetoTrack;
+				PRODUCT_NAME = KetoTrack;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -319,6 +319,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = KetoTrack;
+				PRODUCT_NAME = KetoTrack;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
